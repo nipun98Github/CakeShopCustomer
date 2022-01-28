@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:fitsSystemWindows="true"
+    tools:context=".AboutActivity"
+    tools:openDrawer="start">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                android:elevation="4dp"
+                android:theme="@style/AppTheme.NoActionBar"
+                app:title="About Us" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".Aboutus">
+
+
+            <VideoView
+                android:id="@+id/videoView1"
+
+                android:layout_width="match_parent"
+                android:layout_height="296dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="-2dp"
+                android:layout_marginLeft="-2dp"
+
+                android:layout_marginBottom="111dp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="381dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="130dp"
+                android:text="🎆 The Cake Town in SriLanka, Colombo is one of the leading businesses in the Bakeries. Also known for Restaurants, Bakeries, Cake Shops, Moderate Restaurants (Rs 500 To Rs 1000), Cake Delivery Services, Chocolate Retailers, Bakery Product Retailers and much more. Find more Information Call 0113196099"
+                android:textColor="#E91E63"
+                android:textSize="18sp"
+                android:textStyle="italic"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/navibar_layout" />
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
+
+

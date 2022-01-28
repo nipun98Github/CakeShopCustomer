@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:fitsSystemWindows="true"
+    tools:context=".AboutActivity"
+    tools:openDrawer="start">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                android:elevation="4dp"
+                android:theme="@style/AppTheme.NoActionBar"
+                app:title="My Profile" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:text="Name"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/pname"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/pname"
+                app:layout_constraintVertical_bias="0.476" />
+
+            <ImageView
+                android:id="@+id/pimage"
+                android:layout_width="193dp"
+                android:layout_height="207dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="120dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:text="Mobile"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/pmobile"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/pmobile"
+                app:layout_constraintVertical_bias="0.476" />
+
+            <EditText
+                android:id="@+id/pname"
+                android:layout_width="230dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginEnd="52dp"
+
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pimage" />
+
+            <EditText
+
+                android:id="@+id/pmobile"
+                android:layout_width="230dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="52dp"
+                android:ems="10"
+
+                android:inputType="textPersonName"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pname" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:text="Email"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/pemail"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/pemail"
+                app:layout_constraintVertical_bias="0.388" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:text="Address"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/paddress"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/paddress"
+                app:layout_constraintVertical_bias="0.07" />
+
+            <EditText
+                android:id="@+id/pemail"
+                android:layout_width="230dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="52dp"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pmobile" />
+
+            <EditText
+                android:id="@+id/paddress"
+                android:layout_width="230dp"
+                android:layout_height="122dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="52dp"
+                android:ems="10"
+                android:inputType="textPostalAddress"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pemail" />
+
+            <Button
+                android:id="@+id/pEditbtn"
+                android:layout_width="0dp"
+                android:layout_height="43dp"
+                android:layout_marginTop="32dp"
+                android:background="#FB8C00"
+                android:text="Edit Profile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.635"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/paddress" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+    <include layout="@layout/navibar_layout" />
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
+
+

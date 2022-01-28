@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/promtTextview"
+        android:layout_width="190dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="Enter Quantity"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/promtPlusBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/ic_plus"
+        app:layout_constraintEnd_toEndOf="@+id/promtTextview"
+        app:layout_constraintTop_toBottomOf="@+id/promtTextview" />
+
+    <Button
+        android:id="@+id/promtMinusBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/ic_minus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/promtTextview" />
+
+    <EditText
+        android:id="@+id/promtqty"
+        android:layout_width="78dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/promtPlusBtn"
+        app:layout_constraintStart_toEndOf="@+id/promtMinusBtn"
+        app:layout_constraintTop_toBottomOf="@+id/promtTextview" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
